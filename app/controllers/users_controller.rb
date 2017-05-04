@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  def login
-    @user = Users.email
-    @password = Users.password
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation)
   end
 end
