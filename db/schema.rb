@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170503191211) do
+ActiveRecord::Schema.define(version: 20170507021223) do
 
   create_table "emails", force: :cascade do |t|
-    t.integer  "user_id"
-    t.string   "contents"
-    t.string   "sender"
-    t.date     "datesent"
-    t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "sender_first_name"
+    t.string "sender_last_name"
+    t.string "sender_email"
+    t.string "subject"
+    t.string "body"
+    t.date   "received_date"
+    t.string "read_boolean"
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,19 +1,89 @@
 <!DOCTYPE html>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <h1> Enspire Interview App </h1>
-    </div>
-    <p class="navbar-default .navbar-right">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Enspire Interview App</a>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+      </li>
+    </ul>
     <div class="dropdown">
       <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="DropdownMenu1">
-        Button <span class="caret"></span>
+        Select a Filter <span class="caret"></span>
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item">a</a>
+        <a class="dropdown-item">Filter 1</a>
+        <a class="dropdown-item">Filter 2</a>
+        <a class="dropdown-item">Filter 3</a>
+        <a class="dropdown-item">None</a>
       </div>
     </div>
-    </p>
   </div>
 </nav>
+
+<div class="row">
+  <div class="col-2">
+    Email Address
+    <input type="text" placeholder="Email Address" aria-describedby="basic-addon2">
+    <br>
+    <br>
+    Message Contains
+    <input type="text" placeholder="Message Contains" aria-describedby="basic-addon2">
+    <br>
+    <br>
+    Recieved Before
+    <input type="date" placeholder="Recieved Before" aria-describedby="basic-addon2">
+    <br>
+    <br>
+    Status
+      <div class="btn-group-vertical" data-toggle="radio">
+        <label class="custom-radio">
+          <input type="radio" name="options" id="option1" autocomplete="off"> Only Read Messages
+        </label>
+        <label class="custom-radio">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Only Unread Messages
+        </label>
+      </div>
+    <br>
+    <br>
+    <button class="btn btn-primary" type="submit">Apply Filter</button>
+    <br>
+    <br>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Name the Filter">
+      <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">Save</button>
+            </span>
+    </div>
+    <br>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input">
+         Set as Default Filter
+      </label>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-8">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Date Received</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
