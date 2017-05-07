@@ -12,6 +12,7 @@ Email.create!(:sender_first_name => 'Greg',
               :body => 'Hey, it is Greg here. Did you know that my favorite color was red? I know it is craaaaazy man have a good day.',
               :received_date => Date.today,
               :read_boolean => false)
+
 Email.create!(:sender_first_name => 'John',
               :sender_last_name => 'Johnny',
               :sender_email => 'jj@gmail.com',

@@ -1,0 +1,11 @@
+<%= t.fields_for :emails do |w| %>
+
+    <%= w.label :sender_first_name, :sender_last_name %>
+
+    <%= w.label :subject %>
+
+    <%= w.label :body%>
+
+    <%= w.label :received_date %>
+
+<% end %>
