@@ -79,10 +79,10 @@
         <% @emails.each { |t| %>
           <tr>
             <div class = "emails <%= "emails="+t.id.to_s%>">
-              <td><%=t.sender_first_name%> <%=t.sender_last_name%></td>
-              <td><%=t.subject%></td>
-              <td><%=t.body%></td>
-              <td><%=t.received_date%></td>
+              <td class="no-wrap"><%=t.sender_first_name%> <%=t.sender_last_name%></td>
+              <td class="no-wrap"><%=t.subject%></td>
+              <td class="no-wrap"><%=shorten(t.body)%></td>
+              <td class="no-wrap"><%=t.received_date%></td>
             </div>
           </tr>
         <%}%>
